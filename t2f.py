@@ -33,7 +33,7 @@ def _trim(s):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=PROG_DESC)
-    parser.add_argument('-t', '--template', help="""Template file name. File vars: {VAR1} {VAR2}""")
+    parser.add_argument('-t', '--template', help="Template file name. File vars: {VAR1} {VAR2}")
     parser.add_argument('-r', '--replace', help="\"VAR1='VAL1', VAR2='VAL2'\"")
     parser.add_argument('-o', '--outfile', help="Output file name")
     args = parser.parse_args()
