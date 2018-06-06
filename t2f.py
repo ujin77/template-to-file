@@ -37,7 +37,6 @@ if __name__ == "__main__":
     parser.add_argument('-r', '--replace', help="\"VAR1='VAL1', VAR2='VAL2'\"")
     parser.add_argument('-o', '--outfile', help="Output file name")
     args = parser.parse_args()
-    parser.print_help()
 
     if args.template and args.replace:
         load_data = load_template(args.template)
